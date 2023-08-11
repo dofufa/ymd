@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--    {% include ga.html %}-->
+    
+    <!-- page info -->
+    <meta name="keywords" content="{{ page.keywords }}" />
+    <meta name="description" content="{{ page.description }}" />    
+    <link rel="canonical" href="https://now.dofufa.com">   
+    <title>{{ page.title }}</title>
+    <base href="https://now.dofufa.com/" />
+
+    <!-- site info -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- using RFC 7231 date format-->
+    <meta http-equiv="expires" content="Sun, 31 Dec 2023 00:00:00 GMT">
+    <meta name="robots" content="noindex,nofollow" />
+    <!-- create new favicon: https://www.favicon.cc/ -->
+    <link rel="shortcut icon" href="/favicon.ico" />    
+    <meta name="viewport" content="width=device-width">
+    
+<!--    {% include appleicons.html %}-->    
+  </head>
+
+  <body>
+    <div id="content">
+      {{ content }}
+    </div>
+
+    {% include style.html %}
+    {% include js.html %}
+  </body>
+</html>
